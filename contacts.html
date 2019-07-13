@@ -4,83 +4,149 @@
   <meta charset="utf-8">
   <meta name="Description" content="INF 7420 Project">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Rafia's Artwork</title>
  
 </head>
 <body>
-    <header>
-    
-    <div class="logo">
-                <a href="index.html"> <img src="image/Weblogo.jpg" alt="website logo" height="70" width="270"/></a>
-     </div>
-    <div class="social-media" id="socail-media">
-                <a href="https://www.facebook.com/"><img src="image/facebook.jpg" alt="facebooklogo" height="18"/></a>
-                <a href="https://www.instagram.com/"><img src="image/Instagram.jpg" alt="instagram logo" height="19"/></a>
-                <a href="https://www.youtube.com/"><img src="image/youtube.jpg" alt="youtube logo" height="17"/></a>
-                <a href="https://www.pinterest.com/"><img src="image/pinterest.jpg" alt="pinterest logo" height="20"/></a>
-                <a href="https://www.twitter.com/"><img src="image/twitter.jpg" alt="twitter logo" height="18"/></a>
-            
-    </div>  
-     <div class="search">
-            <form action="https://www.google.com" target="_blank" method="GET">
-                <input class="search-area" type="text" value="Search Here"> 
-                <button type="submit" id="button" >search</button>
-               </form>
+  
+  <header>
+    <div class="logo-container">
+        <a href="index.html">
+     <h1><span class="upper">R</span>afia's &ThinSpace; <span class="upper"> A</span>rtwork</h1>   
+    </a>
     </div>
-    <div class="cart">
-            <img src="image/cart.jpg" alt="cart" height="18"/> <a href="index.html"> Cart</a> 
+    <div class="logo-container2">
+      <a href="https://www.facebook.com/"><img src="image/iconfb.jpg" alt="facebooklogo" height="20"/></a>
+      <a href="https://www.instagram.com/"><img src="image/icons8-instagram-filled-100.png" alt="instagram logo" height="20"/></a>
+      <a href="https://www.youtube.com/"><img src="image/icontube.png" alt="youtube logo" height="22"/></a>
+      <a href="https://www.pinterest.com/"><img src="image/icons8-pinterest-filled-100.png" alt="pinterest logo" height="20"/></a>
+      <a href="https://www.twitter.com/"><img src="image/icons8-twitter-circled-filled-100.png" alt="twitter logo" height="20"/></a>
+
     </div>
-    
-     
-    
-</header>
-    
-<nav class="main-nav">  
-        <ul>
-                
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="artwork.html">Artwork</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
-             
-        </ul>
-
-    
-     </nav>
-         
-    <main>
-            <div class = "contacts">
-
-                    <h2>Contact Me</h2>
-            
-                    <h3>Email Me:</h3>
-                    <p>sultana.rafia.2019@gmail.com</p>
-                    <h3>Call Me:</h3>   
-                    <p> Phone: 413-685-5570</p>
-                    
-                      
-            </div> 
-    </main>
-
    
-     <footer>
-           
-            <div class="social-media-footer">
-                        <a href="https://www.facebook.com/"><img src="image/facebook.jpg" alt="facebooklogo" height="18"/></a>
-                        <a href="https://www.instagram.com/"><img src="image/Instagram.jpg" alt="instagram logo" height="19"/></a>
-                        <a href="https://www.youtube.com/"><img src="image/youtube.jpg" alt="youtube logo" height="17"/></a>
-                        <a href="https://www.pinterest.com/"><img src="image/pinterest.jpg" alt="pinterest logo" height="20"/></a>
-                        <a href="https://www.twitter.com/"><img src="image/twitter.jpg" alt="twitter logo" height="18"/></a>
-            </div>
+  </header>
+  
+  <nav class="main-nav" id="nav" >
+     <!---sidepanel start-->
+     <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="artwork.html">Photography</a>
+      <a href="artwork.html">Painting</a>
+      <a href="contacts.html">Contact</a>
+      <a href="index.html">Cart</a>
+      <a href="https://www.google.com/">Search</a>
+      <div class="sidepanel-social">
+        <a href="https://www.facebook.com/"><img src="image/iconfb.jpg" alt="facebooklogo" height="20"/></a>
+        <a href="https://www.instagram.com/"><img src="image/icons8-instagram-filled-100.png" alt="instagram logo" height="20"/></a>
+        <a href="https://www.youtube.com/"><img src="image/icontube.png" alt="youtube logo" height="22"/></a>
+        <a href="https://www.pinterest.com/"><img src="image/icons8-pinterest-filled-100.png" alt="pinterest logo" height="20"/></a>
+        <a href="https://www.twitter.com/"><img src="image/icons8-twitter-circled-filled-100.png" alt="twitter logo" height="20"/></a>
+        </div>
+  </div>
 
-            <div class="copyright" >
-                    <h5 id="copyright">Copyright &copy; 2019 By Rafia Sultana. All Rights Reserved.
-                    <a href="index.html"> Condition of Use,</a>
-                    <a href="index.html"> Privacy Policy</a></h5>
-                  </div>
-             
-       </footer>
+  <div class="btn"> 
+    <button class="openbtn" onclick="openNav()">
+      <img src="image/hamburger.jpg" class="hamburger"> 
+    </button>
+  </div>
+    <!---sidepanel end-->
+    <!----desptop or large screen-->
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+          <li class="dropdown"><a href="#" class="dropbtn">Artwork</a>
+              <div class="dropdown-content">
+                      <a href="artwork.html">Photography</a>
+                      <a href="artwork.html">Painting</a>
+              </div>
+          </li>
+      <li><a href="contacts.html">Contacts</a></li>  
+     
+  </ul>
+ 
+<div class="search">
+  <form action="https://www.google.com" target="_blank" method="GET" >
+    <input type="text" value="Type and hit enter...." > 
+   
+    </form>  
+</div>
+<div class="cart"> 
+   <a href="index.html"> <img src="image/iconscart.jpg" alt="cart"  height="20px"/>  
+  Cart</a>
+</div>
+<a href="index.html">
+<h1 class="smallnav"><span class="upper1">R</span>afia's &ThinSpace;
+   <span class="upper1"> A</span>rtwork</h1> 
+   </a>  
+   
+    <!----desktop or large screen-->
+  </nav>
+  
+  <main class="contact-main">
+     <div class="contact-form">
+        <form action="https://formspree.io/sultana.rafia.2019@gmail.com" method="POST" class="validate">
+                <label for="name">Name</label>
+                <input id="name" type="text" name="name" 
+                class="form-input">
+
+                <label for="email">Email</label>
+                <input id="email" type="email" name="_replyto" 
+                class="form-input" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message"
+                class="form-input" row ="4" required></textarea>
+
+                <input type="submit" value="Send" class="sendinput">
+        </form>
+       </div>
+  </main>
+  
+  <section class="featured-section">
+      <div class="featured-artwork contactpagefa"  ><h2>Featured Artwork</h2></div>
+      <div class="featured-artwork-image">
+          <ul>
+               <li> <figure>
+                  <a href="artwork.html"><img src="image/demo.jpg" alt="demo image 1"/>
+               <figcaption> Nature Photography"Peace" 20 X 20, $200 </figcaption></a>
+               </figure>
+               </li>
+               <li><figure><a href="artwork.html"><img src="image/demo1.jpg" alt="demo image 2"/>
+               <figcaption>Nature Photography" Beauty" 20 X 20, $100</figcaption></a></figure> 
+               </li>
+               <li><figure><a href="artwork.html"><img src="image/demo2.jpg" alt="demo image 3"/>
+               <figcaption>Nature Photography"Deep" 20 X 20, $270</figcaption></a></figure> 
+               </li>
+               <li> <figure><a href="artwork.html"><img src="image/demo3.jpg" alt="demo image 3"/>
+                   <figcaption> Nature Photography"Paradise" 20 X 20, $250</figcaption></a></figure> 
+               </li>
+          </ul>
+      </div>
+   
+  </section>
+    
+  <footer id="footer">
+      <div class="social-media-footer">
+          <a href="https://www.facebook.com/"><img src="image/iconfb.jpg" alt="facebooklogo" height="20"/></a>
+          <a href="https://www.instagram.com/"><img src="image/icons8-instagram-filled-100.png" alt="instagram logo" height="20"/></a>
+          <a href="https://www.youtube.com/"><img src="image/icontube.png" alt="youtube logo" height="22"/></a>
+          <a href="https://www.pinterest.com/"><img src="image/icons8-pinterest-filled-100.png" alt="pinterest logo" height="20"/></a>
+          <a href="https://www.twitter.com/"><img src="image/icons8-twitter-circled-filled-100.png" alt="twitter logo" height="20"/></a>
+</div>
+     <div class="copyright">
+       
+      Copyright &copy;2019 Rafia Sultana. All Rights Reserved.
+     
+     </div>
+  </footer>  
+
+<script src="script.js" >
+
+</script> 
     
   
  

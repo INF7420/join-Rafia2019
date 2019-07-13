@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="Description" content="INF 7420 Project">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Rafia's Artwork</title>
  
@@ -11,56 +12,110 @@
 <body>
     <header>
     
-    <div class="logo">
-                <a href="index.html"> <img src="image/Weblogo.jpg" alt="website logo" height="70" width="270"/></a>
-     </div>
-    <div class="social-media" id="socail-media">
-                <a href="https://www.facebook.com/"><img src="image/facebook.jpg" alt="facebooklogo" height="18"/></a>
-                <a href="https://www.instagram.com/"><img src="image/Instagram.jpg" alt="instagram logo" height="19"/></a>
-                <a href="https://www.youtube.com/"><img src="image/youtube.jpg" alt="youtube logo" height="17"/></a>
-                <a href="https://www.pinterest.com/"><img src="image/pinterest.jpg" alt="pinterest logo" height="20"/></a>
-                <a href="https://www.twitter.com/"><img src="image/twitter.jpg" alt="twitter logo" height="18"/></a>
-            
-    </div>  
-     <div class="search">
-            <form action="https://www.google.com" target="_blank" method="GET">
-                <input class="search-area" type="text" value="Search Here"> 
-                <button type="submit" id="button" >search</button>
-               </form>
-    </div>
-    <div class="cart">
-            <img src="image/cart.jpg" alt="cart" height="18"/> <a href="index.html"> Cart</a> 
-    </div>
+        <div class="logo-container">
+          <a href="index.html">
+                <h1><span class="upper">R</span>afia's &ThinSpace; <span class="upper"> A</span>rtwork</h1>   
+              </a>
+              </div>
+               <div class="logo-container2">
+                 <a href="https://www.facebook.com/"><img src="image/iconfb.jpg" alt="facebooklogo" height="20"/></a>
+                 <a href="https://www.instagram.com/"><img src="image/icons8-instagram-filled-100.png" alt="instagram logo" height="20"/></a>
+                 <a href="https://www.youtube.com/"><img src="image/icontube.png" alt="youtube logo" height="22"/></a>
+                 <a href="https://www.pinterest.com/"><img src="image/icons8-pinterest-filled-100.png" alt="pinterest logo" height="20"/></a>
+                 <a href="https://www.twitter.com/"><img src="image/icons8-twitter-circled-filled-100.png" alt="twitter logo" height="20"/></a>
+           
+               </div>
     
      
     
 </header>
     
-<nav class="main-nav">  
-        <ul>
-                
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="artwork.html">Artwork</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
-             
-        </ul>
-
+<nav class="main-nav">
+        <!---sidepanel start-->
+        <div id="mySidepanel" class="sidepanel">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+         <a href="index.html">Home</a>
+         <a href="about.html">About</a>
+         <a href="artwork.html">Photography</a>
+         <a href="artwork.html">Painting</a>
+         <a href="contacts.html">Contact</a>
+         <a href="index.html">Cart</a>
+        <a href="https://www.google.com/">Search</a>
+         <div class="sidepanel-social">
+           <a href="https://www.facebook.com/"><img src="image/iconfb.jpg" alt="facebooklogo" height="20"/></a>
+           <a href="https://www.instagram.com/"><img src="image/icons8-instagram-filled-100.png" alt="instagram logo" height="20"/></a>
+           <a href="https://www.youtube.com/"><img src="image/icontube.png" alt="youtube logo" height="22"/></a>
+           <a href="https://www.pinterest.com/"><img src="image/icons8-pinterest-filled-100.png" alt="pinterest logo" height="20"/></a>
+           <a href="https://www.twitter.com/"><img src="image/icons8-twitter-circled-filled-100.png" alt="twitter logo" height="20"/></a>
+           </div>
+     </div>
+   
+     <div class="btn"> 
+       <button class="openbtn" onclick="openNav()">
+         <img src="image/hamburger.jpg" class="hamburger"> 
+       </button>
+     </div>
+       <!---sidepanel end-->
+       <!----desptop or large screen-->
+       <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="about.html">About</a></li>
+             <li class="dropdown"><a href="#" class="dropbtn">Artwork</a>
+                 <div class="dropdown-content">
+                         <a href="artwork.html">Photography</a>
+                         <a href="artwork.html">Painting</a>
+                 </div>
+             </li>
+         <li><a href="contacts.html">Contacts</a></li>  
+        
+     </ul>
     
+   <div class="search">
+     <form action="https://www.google.com" target="_blank" method="GET" >
+       <input type="text" value="Type and hit enter...." > 
+      
+       </form>  
+   </div>
+   <div class="cart"> 
+      <a href="index.html"> <img src="image/iconscart.jpg" alt="cart"  height="20px"/>  
+     Cart</a>
+   </div>
+   <a href="index.html">
+   <h1 class="smallnav"><span class="upper1">R</span>afia's &ThinSpace;
+     <span class="upper1"> A</span>rtwork</h1> 
+     </a>  
+      
+       <!----desktop or large screen-->
      </nav>
          
-    <main>
+    <main class="about-main">
             <div class = "about">
 
-                        <div><img src="image/artist.jpg" alt="artist image" class="artist-image"
-                                height="250" width="250"/> 
+                        <div class="artist-image">
+                          <img src="image/artist.jpg" alt="artist image" class="artist-image"/> 
                         </div>
                         <div class= "artist-bio">    
                                         <h2>Meet the Artist</h2>
-                                        <p>This is me rafia. I love painting and
-                                            photography of beautiful landscape <br/>
-                                           around the world. Don't forget to Check out all my artworks.
-                                           <br/> you gonna love it !</p>
+                                        
+                                        <p>
+                                          Hello, this is me Rafia. I live by the Detroit river, not everyone gets
+                                          that chance. I love to spend my spare time doing painting and photography
+                                          of beautiful things around me. You will know me if you see my artworks. So, 
+                                          don't forget to check out all my artworks. You gonna love it !  Hello, this
+                                          is me Rafia. I live by the Detroit river, not everyone gets that chance.
+                                          I love to spend my spare time doing painting and photography of beautiful
+                                          things around me. You will know me if you see my artworks. So, don't forget
+                                          to check out all my artworks. You gonna love it !
+                                        </p>
+                                        <p>
+                                          I love to spend my spare time doing painting and photography of beautiful
+                                          I love to spend my spare time doing painting and photography of beautiful
+                                          I love to spend my spare time doing painting and photography of beautiful
+                                          I love to spend my spare time doing painting and photography of beautiful
+                                          I love to spend my spare time doing painting and photography of beautiful
+                                          I love to spend my spare time doing painting and photography of landscape.</p>
+                                          
+                                            
                          </div>
                    
         
@@ -69,23 +124,24 @@
     </main>
 
    
-     <footer>
-           
-            <div class="social-media-footer">
-                        <a href="https://www.facebook.com/"><img src="image/facebook.jpg" alt="facebooklogo" height="18"/></a>
-                        <a href="https://www.instagram.com/"><img src="image/Instagram.jpg" alt="instagram logo" height="19"/></a>
-                        <a href="https://www.youtube.com/"><img src="image/youtube.jpg" alt="youtube logo" height="17"/></a>
-                        <a href="https://www.pinterest.com/"><img src="image/pinterest.jpg" alt="pinterest logo" height="20"/></a>
-                        <a href="https://www.twitter.com/"><img src="image/twitter.jpg" alt="twitter logo" height="18"/></a>
-            </div>
-
-            <div class="copyright" >
-                    <h5 id="copyright">Copyright &copy; 2019 By Rafia Sultana. All Rights Reserved.
-                    <a href="index.html"> Condition of Use,</a>
-                    <a href="index.html"> Privacy Policy</a></h5>
-                  </div>
-             
-       </footer>
+    <footer  id="footer">
+        <div class="social-media-footer">
+            <a href="https://www.facebook.com/"><img src="image/iconfb.jpg" alt="facebooklogo" height="20"/></a>
+            <a href="https://www.instagram.com/"><img src="image/icons8-instagram-filled-100.png" alt="instagram logo" height="20"/></a>
+            <a href="https://www.youtube.com/"><img src="image/icontube.png" alt="youtube logo" height="22"/></a>
+            <a href="https://www.pinterest.com/"><img src="image/icons8-pinterest-filled-100.png" alt="pinterest logo" height="20"/></a>
+            <a href="https://www.twitter.com/"><img src="image/icons8-twitter-circled-filled-100.png" alt="twitter logo" height="20"/></a>
+  </div>
+       <div class="copyright">
+         
+        Copyright &copy;2019 Rafia Sultana. All Rights Reserved.
+       </div>
+    </footer>  
+  
+    <script src="script.js">
+        
+    </script> 
+      
     
   
  
