@@ -234,6 +234,7 @@ html,body{
 }
 main{
     min-height: 100%;
+   
 }
 
 /*------------- hero image start --------*/
@@ -243,6 +244,8 @@ image{
 .image-wrappper{
   width: 100%;
   margin:0 auto;
+  
+
   
 }
 
