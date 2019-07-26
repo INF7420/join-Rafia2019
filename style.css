@@ -33,6 +33,10 @@ justify-content: space-evenly;
   align-items: center;
  
 }
+.logo-container2 a > img:hover{
+  cursor:pointer;
+  background-color:rgb(252, 252, 182);
+}
 .upper{
   font-family: 'Satisfy',cursive;
   font-size: 65px;
@@ -118,10 +122,7 @@ nav li.dropdown{
   display: block;
 }
 
-.search-and-cart{
-  display:flex;
-  justify-content: space-between;
-}
+
 .search{
  padding:20px;
  width:13%; 
@@ -147,6 +148,10 @@ padding:17px 40px;
   font-size:20px;
   color:rgb(9, 49, 9);
 }
+.cart a:hover{
+  cursor:pointer;
+  
+}
 
 
 /*------------------desptop or large screen navigation end-----------------*/
@@ -168,9 +173,16 @@ padding:17px 40px;
 }
 .sidepanel-social{
   display:flex;
+  justify-content: center;
   flex-wrap: wrap;
+  
 }
 
+.sidepanel-social a img:hover{
+  cursor:pointer;
+  background-color: #f1f1f1;
+
+}
 .sidepanel a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -196,7 +208,7 @@ padding:17px 40px;
 .btn {
   cursor: pointer;
   background-color: #81BA05;
- width:20px; 
+  width:20px; 
    
 }
 .hamburger{
@@ -204,14 +216,14 @@ padding:17px 40px;
   cursor: pointer;
 }
 .openbtn:hover .hamburger:hover{
-color:whitesmoke;
+  color:whitesmoke;
 }
 .openbtn{
 background-color:#81BA05;
 border:none;
 margin:5px 5px;
 width: 50px;
- height:40px;
+height:40px;
 
 }
 .upper1{
@@ -348,6 +360,10 @@ z-index:-1;
 .social-media-footer a{
   padding:20px;
 }
+.social-media-footer a img:hover{
+  cursor:pointer;
+  background-color: white;
+}
 
 .copyright{
   
@@ -438,13 +454,13 @@ z-index:-1;
   font-weight: 400;
   color:rgb(9, 46, 9);
 }
-.artwork-box-image figcaption{
+.artwork-box-image p{
   font-size:1.5em;
   font-weight:600;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color:rgb(7, 36, 7);
 }
-.artwork-box-image-small figcaption{
+.artwork-box-image-small p{
   font-size:.8em;
   font-weight:700;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -482,6 +498,19 @@ z-index:-1;
 /*------------- Contact page start-----------*/
 .contact-main{
   background: rgb(215, 248, 185)
+}
+.contacttitle{
+ display:flex;
+ justify-content: space-around;
+ align-content: center;
+ padding-top: 10px;
+ 
+}
+.contacttitle p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(9, 49, 9);
+  font-size: 30px;
+  font-weight:500;
 }
 .contact-form{
   display:flex;
@@ -586,14 +615,18 @@ textarea{
   margin-bottom:29px;
   margin-left: 10px;
 }
-.contact-featured-artwork-large-imagebox figcaption{
+.contact-featured-artwork-small-imagebox:hover{
+  cursor:pointer;
+  
+}
+.contact-featured-artwork-large-imagebox p{
   font-size:1.5em;
   font-weight:600;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color:rgb(7, 36, 7);
   text-align: center;
 }
-.contact-featured-artwork-small-imagebox figcaption{
+.contact-featured-artwork-small-imagebox p{
   font-size:.8em;
   font-weight:700;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
