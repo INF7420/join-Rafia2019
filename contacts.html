@@ -29,7 +29,7 @@
   </header>
   
   <nav class="main-nav" id="nav" >
-     <!---sidepanel start-->
+     <!--sidepanel start-->
      <div id="mySidepanel" class="sidepanel">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       <a href="index.html">Home</a>
@@ -50,44 +50,46 @@
   </div>
 
   <div class="btn"> 
-    <button class="openbtn" aria-label="image" onclick="openNav()">
+    <button class="openbtn" aria-label="menu" onclick="openNav()">
       <img src="image/hamburger.jpg" alt="hamburger button" class="hamburger"> 
     </button>
   </div>
-    <!---sidepanel end-->
-    <!----desptop or large screen-->
+    <!--sidepanel end-->
+    <!--desptop or large screen-->
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-          <li class="dropdown"><a href="#" class="dropbtn">Artwork</a>
+      <li class="dropdown"><a href="#" class="dropbtn">Artwork</a>
               <div class="dropdown-content">
                       <a href="artwork.html">Photography</a>
                       <a href="artwork.html">Painting</a>
               </div>
-          </li>
-      <li><a href="contacts.html">Contacts</a></li>  
+      </li>
+      <li><a href="contacts.html">Contact</a></li>  
      
   </ul>
  
 <div class="search">
   <form action="https://www.google.com" target="_blank" method="GET" >
-    <input type="text"  aria-label="text input"  value="Type and hit enter...." > 
+    <input type="text"  aria-label="text"  value="Type and hit enter...." > 
    
     </form>  
 </div>
 <div class="cart"> 
-   <a href="index.html"> <img src="image/shop.svg" alt="cart"  height="20px"/>  
+   <a href="index.html"> <img src="image/shop.svg" alt="cart"  height="20"/>  
   Cart</a>
 </div>
-<a href="index.html" aria-label="home page">
-<h1 class="smallnav"><span class="upper1">R</span>afia's &ThinSpace;
-   <span class="upper1"> A</span>rtwork</h1> 
+<a href="index.html" aria-label="logo">
+<h2 class="smallnav"><span class="upper1">R</span>afia's &ThinSpace;
+   <span class="upper1"> A</span>rtwork</h2> 
    </a>  
    
-    <!----desktop or large screen-->
+    <!--desktop or large screen-->
   </nav>
   
   <main class="contact-main">
+    <div class="contacttitle">
+    <p>Contact Me</p></div>
      <div class="contact-form">
         <form action="https://formspree.io/sultana.rafia.2019@gmail.com" method="POST" class="validate">
                 <label for="name">Name</label>
@@ -100,7 +102,7 @@
 
                 <label for="message">Message</label>
                 <textarea id="message" name="message"
-                class="form-input" row ="4" required></textarea>
+                class="form-input" rows ="4" required></textarea>
 
                 <input type="submit" value="Send" class="sendinput">
         </form>
@@ -118,38 +120,38 @@
         <!--for large screen (starts)-->
           <div class=" contact-featured-artwork-large-imagebox">
               <img src="newimage/demoo.JPG" alt="nature" >
-              <figcaption>"Nature" 20x20, $100</figcaption>
+              <p>"Nature" 20x20, $100</p>
           </div>
           <div class=" contact-featured-artwork-large-imagebox">
               <img src="newimage/flower.JPG" alt="flower" >
-              <figcaption>"Flower" 20x20, $200</figcaption>
+              <p>"Flower" 20x20, $200</p>
           </div>
           <div class=" contact-featured-artwork-large-imagebox">
               <img src="newimage/demo2.JPG" alt="deep" >
-              <figcaption>"Fall" 20x20, $100</figcaption>
+              <p>"Fall" 20x20, $100</p>
           </div>
           <div class=" contact-featured-artwork-large-imagebox">
               <img src="newimage/demo3.JPG" alt="nature" >
-              <figcaption>"Green" 20x20, $300</figcaption>
+              <p>"Green" 20x20, $300</p>
           </div>
           <!--for large screen (ends)-->
 
            <!--for small screen (starts)-->
            <div class=" contact-featured-artwork-small-imagebox">
               <img src="smallimage/demoo.JPG" alt="nature" >
-              <figcaption>"Nature" 20x20, $100</figcaption>
+              <p>"Nature" 20x20, $100</p>
           </div>
           <div class=" contact-featured-artwork-small-imagebox">
               <img src="smallimage/flower.JPG" alt="flower" >
-              <figcaption>"Flower" 20x20, $200</figcaption>
+              <p>"Flower" 20x20, $200</p>
           </div>
           <div class=" contact-featured-artwork-small-imagebox">
               <img src="smallimage/demo2.JPG" alt="deep" >
-              <figcaption>"Fall" 20x20, $100</figcaption>
+              <p>"Fall" 20x20, $100</p>
           </div>
           <div class=" contact-featured-artwork-small-imagebox">
               <img src="smallimage/demo3.JPG" alt="nature" >
-              <figcaption>"Green" 20x20, $300</figcaption>
+              <p>"Green" 20x20, $300</p>
           </div>
            <!--for small screen (ends)-->
       </div>
@@ -180,23 +182,3 @@
  
 </body>
 </html>
-<!--
-      <div class="featured-artwork-image">
-          <ul>
-               <li> <figure>
-                  <a href="artwork.html"><img src="image/demo.jpg" alt="demo image 1"/>
-               <figcaption> Nature Photography"Peace" 20 X 20, $200 </figcaption></a>
-               </figure>
-               </li>
-               <li><figure><a href="artwork.html"><img src="image/demo1.jpg" alt="demo image 2"/>
-               <figcaption>Nature Photography" Beauty" 20 X 20, $100</figcaption></a></figure> 
-               </li>
-               <li><figure><a href="artwork.html"><img src="image/demo2.jpg" alt="demo image 3"/>
-               <figcaption>Nature Photography"Deep" 20 X 20, $270</figcaption></a></figure> 
-               </li>
-               <li> <figure><a href="artwork.html"><img src="image/demo3.jpg" alt="demo image 3"/>
-                   <figcaption> Nature Photography"Paradise" 20 X 20, $250</figcaption></a></figure> 
-               </li>
-          </ul>
-      </div>
-    -->
